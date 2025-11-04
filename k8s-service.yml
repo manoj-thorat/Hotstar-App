@@ -1,0 +1,12 @@
+apiService: v1
+kind: Service
+metadata:
+  name: hotstar-service
+spec:
+  selector:
+    app: hotstar
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: NodePort
